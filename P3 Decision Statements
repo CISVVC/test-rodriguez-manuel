@@ -1,0 +1,36 @@
+ import java.util.Scanner;
+public class Main {
+  public static void main(String args[]) {
+    Scanner in = new Scanner(System.in);
+   
+    System.out.print("Month: ");
+    int Month = in.nextInt();
+    while(Month<0 || Month>12)
+    System.out.println("Day:");
+    int Day = in.nextInt();
+    while (Day<0 || Day>30)
+    
+    
+    if (Month<=3)
+    {
+      System.out.print("Winter");
+    }
+    else if (Month > 3 && Month <= 6)
+    {
+      System.out.println("Spring");
+    }
+    else if (Month >6 && Month <= 9)
+    {
+      System.out.println("Summer");
+    }
+    else if (Month >9 && Month <=12)
+    {
+      System.out.println("Fall");
+    }
+    if(Month % 3 == 0 && Day >=21)
+    {
+      System.out.println("Spring");
+    }
+
+}
+}
