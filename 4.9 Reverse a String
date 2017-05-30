@@ -1,0 +1,12 @@
+import java.util.Scanner; 
+ 
+public class Main{ 
+    public static void main(String[] args) { 
+ Scanner input = new Scanner(System.in); 
+ System.out.print("Word: "); 
+ String word = input.next(); 
+ StringBuilder wordInput = new StringBuilder(word); 
+ word = wordInput.reverse().toString(); 
+ System.out.println("Reverse: " + word); 
+    } 
+}
